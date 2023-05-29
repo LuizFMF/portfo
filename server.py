@@ -17,7 +17,7 @@ def save_to_csv(data):
     now = datetime.now()
     today = now.strftime(r"%Y/%m/%d %H:%M:%S")
     # writing a CSV document in database.csv
-    with open(r"D:\Documents\Coding\Curso Python 3\venv\0 Web Dev\database.csv", mode="a") as database:
+    with open(r"database.csv", mode="a") as database:
         file = database.write(f"\n{email},{subject},{message},{today}")
         database.close
 
